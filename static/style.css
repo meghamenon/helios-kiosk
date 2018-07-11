@@ -1,0 +1,85 @@
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.center{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.center a{
+    font-size: 50px;
+    font-family: arial;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: .5s;
+}
+
+.center a:before{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 40px;
+    background: #fff;
+    color: #000;
+    border: 5px solid #000;
+    transition: .5s;
+    transform-origin: right;
+    transform: translateX(-100%) rotateY(90deg);
+}
+
+.center a:after{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 40px;
+    background: #000;
+    color: #fff;
+    border: 5px solid #000;
+    transition: .5s;
+    transform-origin: left;
+    transform: translateX(0) rotateY(0deg);
+}
+
+.center a:hover:before{
+    transform: translateX(0) rotateY(0deg);
+}
+.center a:hover:after{
+    transform: translateX(100%) rotateY(90deg);
+}
+
+.again{
+    text-decoration:none;
+    color: white;
+}
