@@ -1,21 +1,16 @@
 # helios-kiosk
 
-> vue project
-
 ## Build Setup
 
 ``` bash
-# install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+#for dependencies
+
 npm run dev
 
-# build for production with minification
-npm run build
+#runs on localhost:8080
 
-# build for production and view the bundle analyzer report
-npm run build --report
+NOTE: Would have added a csv file and grabbed the RequestBin url from the file. Had to abandon due to time constraints. 
+
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
